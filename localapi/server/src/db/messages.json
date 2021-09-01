@@ -1,27 +1,9 @@
 [
   {
-    "id": "50",
-    "userId": "steadily",
-    "timestamp": 1234567890123,
-    "text": "50 mock text"
-  },
-  {
     "id": "49",
     "userId": "steadily",
     "timestamp": 1234567950123,
     "text": "49 mock text"
-  },
-  {
-    "id": "48",
-    "userId": "steadily",
-    "timestamp": 1234568010123,
-    "text": "48 mock text"
-  },
-  {
-    "id": "47",
-    "userId": "worked",
-    "timestamp": 1234568070123,
-    "text": "47 mock text"
   },
   {
     "id": "46",
@@ -40,12 +22,6 @@
     "userId": "steadily",
     "timestamp": 1234568250123,
     "text": "44 mock text"
-  },
-  {
-    "id": "43",
-    "userId": "worked",
-    "timestamp": 1234568310123,
-    "text": "43 mock text"
   },
   {
     "id": "42",

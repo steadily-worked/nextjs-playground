@@ -5,7 +5,7 @@ const getUsers = () => readDB("users");
 const usersRoute = [
   {
     method: "get",
-    route: "users",
+    route: "/users",
     handler: (req, res) => {
       const users = getUsers();
       res.send(users);
@@ -13,7 +13,7 @@ const usersRoute = [
   },
   {
     method: "get",
-    route: "users/:id",
+    route: "/users/:id",
     handler: ({ params: { id } }, res) => {
       try {
         const users = getUsers();
