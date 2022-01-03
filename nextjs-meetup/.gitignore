@@ -1,0 +1,9 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/nextjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=nextjs
+
+### NextJS ###
+# Next build dir
+.next/
+node_modules/
+# End of https://www.toptal.com/developers/gitignore/api/nextjs
