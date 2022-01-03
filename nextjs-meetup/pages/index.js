@@ -20,12 +20,6 @@ const DUMMY_MEETUPS = [
 ];
 
 const HomePage = (props) => {
-  // const [loadedMeetups, setLoadedMeetups] = useState([]);
-  // useEffect(() => {
-  //   // http 요청을 보내고 데이터를 fetch함
-  //   setLoadedMeetups(DUMMY_MEETUPS);
-  // }, []);
-  // static generation 사용시 위 Hooks는 불필요함
   return <MeetupList meetups={/*loadedMeetups*/ props.meetups} />;
 };
 
@@ -50,7 +44,6 @@ const HomePage = (props) => {
 export async function getServerSideProps(context) {
   const req = context.req;
   const res = context.res;
-
   // build 프로세스 중에 실행되지 않음. deploy 후 서버에서 실행
   // 즉 요청이 들어올 때마다 실행. 따라서 revalidate가 필요없음
   // fetch data from an API
