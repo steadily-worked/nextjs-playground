@@ -13,7 +13,7 @@ const HomePage = (props) => {
           content="Browse a huge list of highly active React meetups!"
         />
       </Head>
-      <MeetupList meetups={props.meetups} />;
+      <MeetupList meetups={props.meetups} />
     </Fragment>
   );
 };
@@ -21,7 +21,7 @@ const HomePage = (props) => {
 // 1. static generation
 export async function getStaticProps() {
   const client = await MongoClient.connect(
-    "mongodb+srv://admin:4321@cluster0.nzqrp.mongodb.net/meetups?retryWrites=true&w=majority"
+    process.env.NEXT_PUBLIC_DATABASE_URL
   );
   const db = client.db();
 
